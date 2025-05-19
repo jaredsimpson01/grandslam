@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content-contact {
+  width: 100%;
+}
+
+.hero-wrapper-contact {
+  background-color:#f5f7f5;
+  /*background-color: #dce7e1;*/
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-contact {
+  width: 95%;
+  max-width: 95%;
+  height: 70vh;
+  background: url("../assets/contactHero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  border-radius: 12px;
+  background-color: #004d26; 
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero-contact::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.hero-overlay-contact {
+  z-index: 1;
+  position: relative;
+  color: white;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 0 2rem;
+  max-width: 30%;
+}
+
+.contact-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  flex: 1 1 300px;
+  max-width: 400px;
+  transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card h3 {
+  margin-top: 0;
+  color: #004d26;
+  font-size: 1.4rem;
+}
+
+.contact-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-card a {
+  color: #004d26;
+  text-decoration: underline;
+}

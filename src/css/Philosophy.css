@@ -1,0 +1,219 @@
+.philosophy-main-content {}
+
+.philosophy-title {
+  font-family: 'Merriweather', serif;
+  font-size: 2.8rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  z-index: 1;
+}
+
+.section p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: white;
+  max-width: 700px;
+  z-index: 1;
+}
+
+.section {
+  position: relative;
+  height: auto;
+  min-height: 70vh;
+  padding: 6rem 4rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.05);
+  z-index: 0;
+}
+
+.section > * {
+  position: relative;
+  z-index: 1;
+}
+
+.section::after {
+  content: '';
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(255,255,255,0.05), transparent 70%);
+  z-index: 0;
+  border-radius: 50%;
+}
+
+
+.philosophy {
+  background: 
+    linear-gradient(135deg, rgba(45, 85, 50, 0.6), rgba(20, 40, 20, 0.6)),
+    url('../assets/greenCourt.png') center/cover no-repeat;
+  align-items: flex-end;
+}
+
+.charity {
+  background:
+    linear-gradient(135deg, rgba(30, 70, 50, 0.6), rgba(10, 30, 20, 0.6)),
+    url('../assets/charityBackground.png') center/cover no-repeat;
+  align-items: flex-start;
+}
+
+.alternative-investments {
+  background: 
+    linear-gradient(135deg, rgba(60, 120, 60, 0.6), rgba(20, 40, 20, 0.6)),
+    url('../assets/netTexture.png') center/cover no-repeat;
+  align-items: flex-end;
+}
+
+
+/*.philosophy {
+  background: 
+    linear-gradient(135deg, rgba(100, 100, 100, 0.5), rgba(50, 50, 50, 0.5)),
+    url('../assets/greenCourt.png') center/cover no-repeat;
+  align-items: flex-end;
+}
+
+.charity {
+  background:
+    linear-gradient(135deg, rgba(110, 100, 90, 0.5), rgba(60, 50, 40, 0.5)),
+    url('../assets/charityBackground2.png') center/cover no-repeat;
+  align-items: flex-start;
+}
+
+.alternative-investments {
+  background: 
+    linear-gradient(135deg, rgba(120, 120, 120, 0.5), rgba(60, 60, 60, 0.5)),
+    url('../assets/netTexture3.png') center/cover no-repeat;
+  align-items: flex-end;
+}*/
+
+.asymmetric-returns-img {
+  margin-top: 2.5rem;
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .philosophy-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section {
+    padding: 3rem 1.5rem;
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .section p {
+    padding: 0 1rem;
+  }
+
+  .asymmetric-returns-img {
+    max-width: 90%;
+  }
+
+  .section::after {
+    width: 180px;
+    height: 180px;
+    top: -30px;
+    right: -30px;
+  }
+}
+
+.philosophy-wrapper {
+  width: 90%;
+  margin: 2rem auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  background-color: white; /* fallback in case image fails */
+}
+
+.svg-shape {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.top-left-arc {
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+}
+
+.bottom-right-slash {
+  bottom: -20px;
+  right: -40px;
+  width: 200px;
+  height: 200px;
+}
+
+.top-right-bar {
+  top: 40px;
+  right: 20px;
+  width: 200px;
+  height: 40px;
+}
+
+.bottom-left-circle {
+  bottom: -30px;
+  left: -30px;
+  width: 220px;
+  height: 220px;
+}
+
+.top-bar-accent {
+  top: 60px;
+  left: 50px;
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  z-index: 0;
+}
+
+.accent-block {
+  position: absolute;
+  top: 60px;
+  left: -100px;
+  width: 800px;
+  height: 300px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.philosophy-text-overlay {
+  background: rgba(0, 0, 0, 0.55);  /* strong readable contrast */
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(6px);
+  max-width: 800px;
+  z-index: 2;
+}
+
+/* Optional center alignment for smaller screens */
+@media (max-width: 768px) {
+  .text-overlay {
+    padding: 1.5rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+

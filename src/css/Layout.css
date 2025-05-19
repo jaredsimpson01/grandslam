@@ -1,0 +1,9 @@
+:root {
+    --navbar-height: 60px;
+  }
+  
+  .page-content {
+    /*padding-top: var(--navbar-height);*/
+    background-color: #f5f7f5;
+    /*background-color: #dce7e1;*/
+  }

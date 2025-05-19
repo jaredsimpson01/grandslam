@@ -1,0 +1,115 @@
+.portfolio-wrapper {
+  max-width: 1100px;
+  margin: 4rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.portfolio-section {
+  display: flex;
+  min-height: 480px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.07);
+  background: white;
+  transition: transform 0.3s ease;
+  align-items: stretch;
+}
+
+.portfolio-section:hover {
+  transform: translateY(-2px);
+}
+
+.portfolio-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.portfolio-image-block {
+  width: 55%;
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolio-content {
+  width: 45%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.portfolio-content h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #004d26;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-content p {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .portfolio-section,
+  .portfolio-section.reverse {
+    flex-direction: column;
+  }
+
+  .portfolio-image-block,
+  .portfolio-content {
+    width: 100%;
+  }
+
+  .portfolio-image-block {
+    height: 250px; 
+  }
+
+  .portfolio-content {
+    padding: 2rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .portfolio-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio-content p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Image backgrounds */
+.real-estate .portfolio-image-block {
+  background-image: url("../assets/realEstate.png");
+}
+.private-equity .portfolio-image-block {
+  background-image: url("../assets/privateEquity.png");
+}
+.private-debt .portfolio-image-block {
+  background-image: url("../assets/privateDebt.png");
+}
+.hedge-funds .portfolio-image-block {
+  background-image: url("../assets/hedgeFunds.png");
+}
+.public-equity .portfolio-image-block {
+  background-image: url("../assets/publicEquity.png");
+}
+
+.portfolio-image-block {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-section:hover .portfolio-image-block {
+  transform: scale(1.02);
+}

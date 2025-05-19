@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  width: 100%;
+}
+
+.hero-wrapper {
+  background-color:#f5f7f5;
+  /*background-color: #dce7e1;*/
+  padding-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero {
+  width: 90%;
+  max-width: 95%;
+  height: 70vh;
+  background: url("../assets/homeHero.png");
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  position: relative;
+  border-radius: 12px;
+  background-color: #004d26; 
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 0;
+}
+
+.hero-overlay {
+  z-index: 1;
+  position: relative;
+  color: white;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+  padding: 0 2rem;
+  max-width: 30%;
+}
+
+.info-grid {
+  width: 88%;     
+  margin: 0 auto;           
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center; 
+  padding: 3% 0;
+  background-color: #f5f7f5;
+}
+
+
+.hero-image {
+  flex: 1.6;
+  background-image: url("../assets/homeHero.png");
+  background-size: cover;
+  background-position: center left;
+}
+
+.hero-text {
+  flex: 1;
+  background-color: #004d26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  clip-path: polygon(5% 0%, 100% 0%, 100% 100%, 0% 100%);
+  overflow: hidden;
+}
+
+.hero-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20%;
+  width: 150%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  transform: skewX(-20deg);
+  z-index: 0;
+}
+
+.hero-text-bg {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  padding: 2rem 2.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(5px);
+  border-left: 4px solid #ffffffaa;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero-heading {
+  font-size: 2.5rem;
+  color: #fff;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: 600;
+  margin: 0;
+}

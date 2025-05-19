@@ -1,0 +1,44 @@
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    background: white;
+    box-sizing: border-box;
+  }
+  
+  .person-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .background-image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+  }
+  
+  .person-card-content {
+    padding: 0.5rem 0;
+  }
+  
+  .name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .title {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+  }
+  
